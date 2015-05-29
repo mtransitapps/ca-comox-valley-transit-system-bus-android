@@ -5,7 +5,7 @@ Comox Valley Transit System buses for MonTransit BETA.
 Schedule. Alerts. News.
 ----------
 What's new in this version?:
-Schedule from April 27, 2015 to December 31, 2015.
+Schedule from February 24, 2015 to December 31, 2015.
 Tweets from @BCTransit.
 
 BETA: Thanks for your patience while the last features are being added and the last bugs are being fixed.
@@ -29,7 +29,7 @@ The information comes from the GTFS file provided by BC Transit.
 http://bctransit.com/*/footer/open-data
 
 This application is free and open-source:
-https://github.com/mtransitapps/ca-comox Valley-transit-system-bus-android
+https://github.com/mtransitapps/ca-comox-valley-transit-system-bus-android
 
 This app is not related with BC Transit and Comox Valley Transit System.
 
@@ -42,7 +42,7 @@ Category: Transportation
 ----------
 Content rating: Low Maturity
 ----------
-Website: https://github.com/mtransitapps/ca-comox Valley-transit-system-bus-android
+Website: https://github.com/mtransitapps/ca-comox-valley-transit-system-bus-android
 ----------
 Email: mtransit.apps+GooglePlay@gmail.com
 ----------
