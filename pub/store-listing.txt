@@ -5,7 +5,7 @@ Comox Valley Transit System buses for MonTransit.
 Schedule. Alerts. News.
 ----------
 What's new in this version?:
-Schedule from December 1, 2015 to December 31, 2016.
+Schedule from October 18, 2016 to December 31, 2016.
 Tweets from @BCTransit.
 ----------
 Full description:
