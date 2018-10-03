@@ -5,7 +5,7 @@ Comox Valley Transit System buses for MonTransit.
 Schedule. Real time. News.
 ----------
 What's new in this version?:
-Schedule from August 31, 2018 to June 28, 2019.
+Schedule from October 2, 2018 to June 30, 2019.
 Real-time predictions from NextRide.
 Tweets from @BCTransit.
 ----------
