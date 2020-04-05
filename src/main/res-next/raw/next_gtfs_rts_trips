@@ -18,10 +18,10 @@
 1002,0,'Downtown',10
 1104,0,'Downtown Courtenay',11
 1103,0,'Oyster River',11
+1201,0,'Downtown',12
+1200,0,'Merville',12
 1303,0,'Downtown',13
-1301,0,'Downtown',13
-1300,0,'Merville',13
 1304,0,'Union Bay',13
 1402,0,'Cumberland',14
-9900,0,'AM',99
-9901,0,'PM',99
+1500,0,'AM',15
+1501,0,'PM',15
