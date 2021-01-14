@@ -1,27 +1,25 @@
-35502,0,'Anfield Ctr',355
+35500,0,'Anfield Ctr',355
 35501,0,'Comox Mall',355
-35603,0,'Anfield Ctr',356
-35604,0,'Cumberland',356
+35600,0,'Anfield Ctr',356
+35601,0,'Cumberland',356
 35701,0,'Comox Local',357
 35801,0,'Comox Mall',358
-35802,0,'Driftwood Mall',358
-35903,0,'Comox Valley Sports Ctr',359
-35904,0,'Downtown Courtenay',359
-36001,0,'Downtown',360
-36000,0,'NIC',360
-36101,0,'Arden',361
-36204,0,'Anfield Ctr',362
-36203,0,'Downtown',362
-36303,0,'Downtown Courtenay',363
-36304,0,'Fanny Bay',363
+35800,0,'Driftwood Mall',358
+35900,0,'Comox Vly Sports Ctr',359
+35901,0,'Downtown Exch',359
+36001,0,'Uplands',360
+36101,0,'Driftwood Mall',361
+36201,0,'Anfield Ctr',362
+36200,0,'Downtown',362
+36300,0,'Downtown Courtenay',363
+36301,0,'Fanny Bay',363
 36401,0,'Airport',364
-36402,0,'Downtown',364
-36504,0,'Downtown Courtenay',365
-36503,0,'Oyster River',365
-36601,0,'Downtown',366
-36600,0,'Merville',366
-36703,0,'Downtown',367
-36704,0,'Union Bay',367
-36802,0,'Cumberland',368
+36400,0,'Downtown',364
+36501,0,'Downtown Courtenay',365
+36500,0,'Oyster River',365
+36601,0,'Seal Bay - Merville',366
+36700,0,'Downtown',367
+36701,0,'Union Bay',367
+36800,0,'Cumberland',368
 36900,0,'AM',369
 36901,0,'PM',369
