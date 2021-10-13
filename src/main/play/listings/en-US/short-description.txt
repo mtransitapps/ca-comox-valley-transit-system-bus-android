@@ -1,2 +1,1 @@
-Comox Valley Transit System buses for MonTransit.
-Schedule. Real time. News.
+Comox Valley Transit System buses for MonTransit. Schedule. Real time. News.
