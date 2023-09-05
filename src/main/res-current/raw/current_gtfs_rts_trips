@@ -20,11 +20,8 @@
 1301,0,'Seal Bay - Merville',13
 1400,0,'Downtown',14
 1401,0,'Union Bay',14
-1601,0,'VMP Connector',16
+1600,0,'AM',16
+1601,0,'PM',16
 15800,0,'Cumberland',158
-24001,0,'Comox Mall',240
-24000,0,'Downtown',240
-24101,0,'Anfield Ctr',241
-24100,0,'Downtown',241
 52801,0,'Aquatic Ctr',528
 52800,0,'Comox Mall',528
