@@ -1,16 +1,16 @@
-2,'1','Comox Mall / Anfield Ctr Via NIC','004b8d',50,3
-3,'2','Cumberland / Anfield Ctr','8cc63f',51,3
-4,'3','Comox Local','f37421',52,3
-5,'4','Driftwood Mall / Comox Mall Via Comox Rd','00aeef',53,3
-6,'5','Vanier','fcaf17',54,3
-7,'6','Uplands','00aa47',55,3
-8,'7','Arden','ed1d8f',56,3
-9,'8','Downtown / Anfield Ctr','8177b7',57,3
-10,'10','Fanny Bay / Downtown Courtenay','49176b',1567,3
-11,'11','Airport Via Powell R Ferry / Downtown','b2bb1e',1568,3
-12,'12','Oyster River / Downtown Courtenay','4f6f19',1569,3
-13,'13','Merville-Seal Bay Shuttle','77af99',1570,3
-14,'14','Union Bay Shuttle','e270ab',1571,3
-16,'99','VMP Connector','f49a5d',1573,3
-158,'20','Cumberland Via Royston','0073ae',48788,3
-528,'15','Comox Mall Via Back Rd / Aquatic Ctr Via Bac','5d87a1',52539,3
+1,'1','Comox Mall / Anfield Ctr Via NIC','004B8D',49,3
+2,'2','Cumberland / Anfield Ctr','8CC63F',50,3
+3,'3','Comox Local','F37421',51,3
+4,'4','Driftwood Mall / Comox Mall Via Comox Rd','00AEEF',52,3
+5,'5','Vanier','FCAF17',53,3
+6,'6','Uplands','00AA47',54,3
+7,'7','Arden','ED1D8F',55,3
+8,'8','Downtown / Anfield Ctr','8177B7',56,3
+10,'10','Fanny Bay / Downtown Courtenay','49176B',1567,3
+11,'11','Airport Via Powell R Ferry / Downtown','B2BB1E',1568,3
+12,'12','Oyster River / Downtown Courtenay','4F6F19',1569,3
+13,'13','Merville-Seal Bay Shuttle','77AF99',1570,3
+14,'14','Union Bay Shuttle','E270AB',1571,3
+15,'15','Comox Mall Via Back Rd / Aquatic Ctr Via Back Rd','5D87A1',1572,3
+20,'20','Cumberland Via Royston','0073AE',1598,3
+99,'99','VMP Connector','F49A5D',1824,3
