@@ -177,7 +177,7 @@ jobs:
         uses: reactivecircus/android-emulator-runner@v2
         timeout-minutes: 10
         env:
-          TZ: ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
+          # TZ: ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
           MAIN_APK_FILE: ${{ steps.download-main-apk.outputs.MAIN_APK_FILE }}
           MODULE_APK_FILE: ${{ steps.download-module-apk.outputs.MODULE_APK_FILE || steps.build-module-apk.outputs.MODULE_APK_FILE }}
         with:
@@ -190,7 +190,8 @@ jobs:
           disable-spellchecker: true
           disable-linux-hw-accel: false
           emulator-boot-timeout: 180
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -no-snapshot-save -timezone ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -no-snapshot-save
+          # -timezone ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
           script: ./sh/ci/setup-and-all-app-screenshots.sh
 
       - name: MT upload screenshots
