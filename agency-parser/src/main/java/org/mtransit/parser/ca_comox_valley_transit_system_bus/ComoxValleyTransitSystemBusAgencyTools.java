@@ -23,11 +23,6 @@ public class ComoxValleyTransitSystemBusAgencyTools extends DefaultAgencyTools {
 		new ComoxValleyTransitSystemBusAgencyTools().start(args);
 	}
 
-	@Override
-	public boolean defaultExcludeEnabled() {
-		return true;
-	}
-
 	@NotNull
 	@Override
 	public String getAgencyName() {
@@ -71,7 +66,7 @@ public class ComoxValleyTransitSystemBusAgencyTools extends DefaultAgencyTools {
 		routeLongName = CleanUtils.cleanSlashes(routeLongName);
 		routeLongName = CleanUtils.cleanNumbers(routeLongName);
 		routeLongName = CleanUtils.cleanStreetTypes(routeLongName);
-		return CleanUtils.cleanLabel(routeLongName);
+		return CleanUtils.cleanLabel(getFirstLanguageNN(), routeLongName);
 	}
 
 	@Nullable
@@ -133,16 +128,18 @@ public class ComoxValleyTransitSystemBusAgencyTools extends DefaultAgencyTools {
 	private static final Pattern AIRPORT_VIA_POWELL_R_FERRY = Pattern.compile("(airport - powell r\\.? ferry)", Pattern.CASE_INSENSITIVE);
 	private static final String AIRPORT_VIA_POWELL_R_FERRY_REPLACEMENT = "Airport";
 
-	@NotNull
 	@Override
-	public String cleanDirectionHeadsign(int directionId, boolean fromStopName, @NotNull String directionHeadSign) {
-		directionHeadSign = super.cleanDirectionHeadsign(directionId, fromStopName, directionHeadSign);
+	public @NotNull String cleanDirectionHeadsign(@Nullable GRoute gRoute, int directionId, boolean fromStopName, boolean fromTripHeadSign, boolean fromDirection, @NotNull String directionHeadSign) {
+		directionHeadSign =  super.cleanDirectionHeadsign(gRoute, directionId, fromStopName, fromTripHeadSign, fromDirection, directionHeadSign);
 		directionHeadSign = AIRPORT_VIA_POWELL_R_FERRY.matcher(directionHeadSign).replaceAll(AIRPORT_VIA_POWELL_R_FERRY_REPLACEMENT);
 		return directionHeadSign;
 	}
 
 	private static final Pattern STARTS_WITH_NUMBER = Pattern.compile("(^\\d+\\S*)", Pattern.CASE_INSENSITIVE);
 
+	private static final Pattern ENDS_WITH_DASH = Pattern.compile("(\\s*-\\s*$)");
+
+	@SuppressWarnings("SpellCheckingInspection")
 	private static final Pattern FIX_DOWNTOWN_ = CleanUtils.cleanWord("downtwon");
 	private static final String FIX_DOWNTOWN_REPLACEMENT = CleanUtils.cleanWordsReplacement("Downtown");
 
@@ -155,11 +152,12 @@ public class ComoxValleyTransitSystemBusAgencyTools extends DefaultAgencyTools {
 		tripHeadsign = BAY_AZ_.matcher(tripHeadsign).replaceAll(EMPTY);
 		tripHeadsign = CleanUtils.toLowerCaseUpperCaseWords(Locale.ENGLISH, tripHeadsign, getIgnoredWords());
 		tripHeadsign = CleanUtils.keepToAndRemoveVia(tripHeadsign);
+		tripHeadsign = ENDS_WITH_DASH.matcher(tripHeadsign).replaceAll(EMPTY);
 		tripHeadsign = CleanUtils.CLEAN_AND.matcher(tripHeadsign).replaceAll(CleanUtils.CLEAN_AND_REPLACEMENT);
 		tripHeadsign = STARTS_WITH_NUMBER.matcher(tripHeadsign).replaceAll(StringUtils.EMPTY);
 		tripHeadsign = CleanUtils.cleanStreetTypes(tripHeadsign);
 		tripHeadsign = CleanUtils.cleanNumbers(tripHeadsign);
-		return CleanUtils.cleanLabel(tripHeadsign);
+		return CleanUtils.cleanLabel(getFirstLanguageNN(), tripHeadsign);
 	}
 
 	@NotNull
@@ -180,7 +178,7 @@ public class ComoxValleyTransitSystemBusAgencyTools extends DefaultAgencyTools {
 		gStopName = CleanUtils.CLEAN_AT.matcher(gStopName).replaceAll(CleanUtils.CLEAN_AT_REPLACEMENT);
 		gStopName = CleanUtils.cleanStreetTypes(gStopName);
 		gStopName = CleanUtils.cleanNumbers(gStopName);
-		return CleanUtils.cleanLabel(gStopName);
+		return CleanUtils.cleanLabel(getFirstLanguageNN(), gStopName);
 	}
 
 	@Override

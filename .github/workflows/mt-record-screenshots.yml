@@ -175,7 +175,7 @@ jobs:
           disable-spellchecker: true
           disable-linux-hw-accel: false
           emulator-boot-timeout: 180
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -no-snapshot-save
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -no-snapshot-save -timezone ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
           script: ./sh/ci/setup-and-all-app-screenshots.sh
 
       - name: MT upload screenshots
