@@ -158,6 +158,10 @@ jobs:
             exit 1 # error
           fi
 
+      - name: set Linux VM timezone
+        run: |
+          sudo timedatectl set-timezone ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
+
       - name: MT record screenshots with Android Emulator
         uses: reactivecircus/android-emulator-runner@v2
         timeout-minutes: 10
