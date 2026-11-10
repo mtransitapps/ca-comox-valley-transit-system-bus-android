@@ -159,6 +159,7 @@ jobs:
           fi
 
       - name: set Linux VM timezone
+        if: runner.os == 'Linux'
         run: |
           sudo timedatectl set-timezone ${{ steps.timezone.outputs.TIMEZONE || 'UTC' }}
 
