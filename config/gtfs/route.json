@@ -1,0 +1,23 @@
+{
+    "route_id_cleanup_regex": "\\-[A-Z]+$",
+    "default_route_id_enabled": true,
+    "use_route_short_name_for_route_id": true,
+    "default_route_long_name_enabled": true,
+    "route_colors_ignored": [
+        "000000"
+    ],
+    "direction_finder_enabled": true,
+    "trip_headsign_remove_via": true,
+    "trip_headsign_cleaners": [
+        {
+            "regex": "(\\s*-\\s*$)",
+            "comment": "Remove ends w/ ' - '"
+        },
+        {
+            "regex": "(^\\d+\\S*)",
+            "ignore_case": true,
+            "comment": "Remove starts w/ number"
+        }
+    ],
+    "stop_name_cleaners": []
+}
